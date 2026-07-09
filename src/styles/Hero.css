@@ -2,7 +2,7 @@
   height: 600px;
   position: relative;
   /* Premium agricultural field image background */
-  background-image: url('https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80');
+  background-image: url('../assets/banner.png');
   background-size: cover;
   background-position: center;
   overflow: hidden;
