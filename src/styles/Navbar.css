@@ -1,0 +1,41 @@
+.agro-navbar {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.top-banner {
+  font-size: 11px;
+  letter-spacing: 1px;
+  background-color: #1b4332 !important;
+}
+
+.main-header {
+  background-color: #ffffff;
+}
+
+.secondary-nav {
+  background-color: #f8faf9 !important; /* Halka safe green color */
+}
+
+.search-box .form-control {
+  border-color: #e2e8f0;
+  box-shadow: none;
+}
+
+.search-box .form-control:focus {
+  border-color: #198754;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #198754 !important;
+}
+
+.cursor-pointer { 
+  cursor: pointer; 
+}

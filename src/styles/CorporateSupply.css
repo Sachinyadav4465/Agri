@@ -1,0 +1,83 @@
+.agro-corporate {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Rounded card wrapper matching the reference image layout */
+.agro-corporate-wrapper {
+  background-color: #faf8f5; /* Premium soft ivory color exactly like the template image */
+  min-height: 450px;
+}
+
+/* Image container styling */
+.image-section {
+  overflow: hidden;
+}
+
+.corporate-img {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.corporate-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(27, 67, 50, 0.1), rgba(0, 0, 0, 0.2));
+}
+
+/* Text & Content Elements Layout */
+.text-section {
+  background-color: #faf8f5;
+}
+
+.corporate-tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.corporate-title {
+  color: #112217;
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+}
+
+.corporate-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #475569 !important;
+}
+
+/* Action Call Button styling */
+.corporate-btn {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  background-color: #112217;
+  border-color: #112217;
+  transition: all 0.3s ease;
+}
+
+.corporate-btn:hover {
+  background-color: #1b4332 !important;
+  border-color: #1b4332 !important;
+  transform: translateY(-2px);
+}
+
+/* Micro-interactions */
+.agro-corporate-wrapper:hover .corporate-img {
+  transform: scale(1.04);
+}
+
+/* Responsive alignment tweaks for tablet/mobile viewports */
+@media (max-width: 767.98px) {
+  .agro-corporate-wrapper {
+    flex-direction: column;
+  }
+  .corporate-img {
+    height: 250px !important;
+  }
+  .corporate-title {
+    font-size: 1.8rem;
+  }
+}

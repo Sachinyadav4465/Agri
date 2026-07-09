@@ -1,0 +1,167 @@
+/* Core Configurations styling map */
+.agro-footer-section {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* --- SECTION A: ACCORDION CSS --- */
+.accordion-custom-container {
+  max-width: 850px;
+}
+
+.accordion-custom-item {
+  background-color: #f8faf9;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordion-custom-item.active {
+  border-color: #198754;
+  background-color: #f0f7f4;
+}
+
+.accordion-custom-header {
+  color: #112217;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.accordion-arrow-icon {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  color: #64748b;
+}
+
+.accordion-arrow-icon.rotate {
+  transform: rotate(180deg);
+  color: #198754;
+}
+
+/* Pure Smooth CSS Height Animation without JS libraries */
+.accordion-custom-body-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordion-custom-body-wrapper.show {
+  max-height: 200px; /* Secure wrapper bounds */
+}
+
+.accordion-custom-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569 !important;
+}
+
+.faq-underline {
+  height: 3px;
+  width: 50px;
+  background-color: #198754;
+  margin-top: 15px;
+}
+
+/* --- SECTION B: NEWSLETTER ROW (As per reference image) --- */
+.newsletter-row {
+  background-color: #faf8f5; /* Premium Light Ivory */
+}
+
+.newsletter-title {
+  color: #0b120f;
+  font-size: 1.8rem;
+}
+
+.newsletter-subtitle {
+  font-size: 13px;
+  color: #475569 !important;
+}
+
+.newsletter-input {
+  border-bottom: 1px solid #112217 !important;
+  color: #112217;
+  font-size: 14px;
+}
+
+.newsletter-input:focus {
+  box-shadow: none !important;
+  border-color: #198754 !important;
+}
+
+.newsletter-submit-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #0b120f !important;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-submit-btn:hover {
+  background-color: #198754 !important;
+}
+
+/* --- SECTION C: DARK FOOTER CSS (Matches image_810c2c.png) --- */
+.main-dark-footer {
+  background-color: #0b120f; /* Pitch Dark Charcoal Forest Green Tint */
+}
+
+.footer-logo {
+  font-size: 19px;
+  letter-spacing: 1.5px;
+}
+
+.footer-logo-sub {
+  font-size: 9px;
+  letter-spacing: 3px;
+  display: block;
+}
+
+/* Rounded contact circles map */
+.contact-icon-circle {
+  width: 36px;
+  height: 36px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-contact-item:hover .contact-icon-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #198754 !important;
+}
+
+/* Navigation Links elements */
+.footer-menu-title {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer-menu-links li a {
+  color: #94a3b8;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+  display: inline-block;
+}
+
+.footer-menu-links li a:hover {
+  color: #f8fafc;
+  padding-left: 4px;
+}
+
+/* Rounded Social Buttons exactly matching layout */
+.social-icon-btn {
+  width: 34px;
+  height: 34px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-3px);
+  background-color: #198754 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 767.98px) {
+  .newsletter-row {
+    text-align: center !important;
+  }
+}

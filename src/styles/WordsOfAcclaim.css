@@ -1,0 +1,67 @@
+.agro-acclaim {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.acclaim-main-title {
+  color: #112217;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.acclaim-subtitle {
+  font-size: 14px;
+  color: #64748b !important;
+}
+
+/* Luxury Dark Theme Cards setup matching the template screenshot perfectly */
+.acclaim-card {
+  background-color: #0b120f; /* Rich Deep Forest Charcoal-Green tint */
+  border: none;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+}
+
+/* Floating styling for Giant Typography Quote Marks */
+.quote-icon-wrapper {
+  height: 40px;
+  margin-top: -20px;
+}
+
+.quote-icon-wrapper span {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1;
+  font-size: 5.5rem;
+  color: #f9fdfb !important; /* Premium Brand Green color */
+}
+
+/* Testimonial text configurations */
+.acclaim-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  color: #cbd5e1 !important; /* Soft high-contrast text layout */
+}
+
+/* Author labels layers */
+.author-name {
+  color: #f8fafc;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.author-location {
+  color: #f4fafd ;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Micro-Interaction Animation rules */
+.acclaim-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.acclaim-card:hover .quote-icon-wrapper span {
+  color: #2d6a4f !important;
+  opacity: 0.5;
+}

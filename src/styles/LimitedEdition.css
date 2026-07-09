@@ -1,0 +1,91 @@
+/* Dark luxury aesthetic mimicking the reference template image layout */
+.agro-limited-edition {
+  background-color: #0b1510; /* Rich Dark Agro Green-Black tone */
+  font-family: 'DM Sans', sans-serif;
+}
+
+.limited-main-title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.limited-subtitle {
+  font-size: 14px;
+}
+
+.limited-underline {
+  height: 3px;
+  width: 50px;
+  background-color: #198754;
+  margin-top: 15px;
+}
+
+/* Card structures */
+.limited-card {
+  background: transparent;
+  transition: transform 0.4s ease;
+}
+
+.limited-img-container {
+  height: 320px; /* Aligned height ratio */
+  background-color: #112217;
+}
+
+.limited-main-img {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Absolute floating identity badge */
+.limited-badge-icon {
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  z-index: 3;
+}
+
+/* Details blocks spacing */
+.limited-item-name {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.limited-item-desc {
+  font-size: 12px;
+  line-height: 1.6;
+  height: 60px; /* Fixed text buffer window */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Interaction links */
+.limited-shop-link {
+  color: #fff;
+  border-bottom: 2px solid #198754;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+/* --- THE HOVER INTERACTIVITY ANIMATIONS --- */
+.limited-card:hover {
+  transform: translateY(-8px);
+}
+
+.limited-card:hover .limited-main-img {
+  transform: scale(1.08);
+}
+
+.limited-card:hover .limited-item-name {
+  color: #198754;
+}
+
+.limited-card:hover .limited-shop-link {
+  color: #198754;
+  border-color: #fff;
+}

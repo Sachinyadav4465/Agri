@@ -1,0 +1,88 @@
+.agro-wall {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.wall-main-title {
+  color: #112217;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.wall-subtitle {
+  font-size: 14px;
+  color: #64748b !important;
+}
+
+.wall-underline {
+  height: 3px;
+  width: 50px;
+  background-color: #2d6a4f;
+  margin-top: 15px;
+}
+
+/* Card Geometry Configuration */
+.wall-card {
+  background: transparent;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.wall-img-container {
+  height: 340px; /* Uniform grid line mapping */
+  background-color: #f8faf9;
+}
+
+.wall-img {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.wall-location-badge {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+/* Text elements alignment */
+.wall-estate-name {
+  font-size: 16px;
+  color: #1e293b;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.wall-achievement {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #475569 !important;
+  height: 55px; /* Strict line buffer encapsulation */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Clean border line action links */
+.wall-link {
+  color: #1b4332;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- INTERACTIVE ACTIONS --- */
+.wall-card:hover {
+  transform: translateY(-6px);
+}
+
+.wall-card:hover .wall-img {
+  transform: scale(1.06);
+}
+
+.wall-card:hover .wall-estate-name {
+  color: #198754;
+}
+
+.wall-card:hover .wall-link {
+  color: #198754;
+  border-color: #198754;
+}

@@ -1,0 +1,127 @@
+/* Core Styling Rules Engine Setup */
+.agro-auth-section {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #fafafa !important;
+}
+
+/* Auth Card Dimensional Box Frame Layout mapping */
+.auth-card {
+  max-width: 950px;
+  background-color: #ffffff;
+  min-height: 580px;
+  border: 1px solid #eef2f0;
+}
+
+/* Left Image Section Layer */
+.art-banner-column {
+  overflow: hidden;
+}
+
+.auth-art-img {
+  object-fit: cover;
+  filter: contrast(1.05) brightness(0.9);
+}
+
+.auth-art-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(11, 18, 15, 0.9) 10%, rgba(27, 67, 50, 0.2) 100%);
+}
+
+.auth-art-overlay h2 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+
+/* Right Content Form Section Elements */
+.form-content-column {
+  background-color: #ffffff;
+}
+
+.auth-brand {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+
+.auth-form-title {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+/* Input Fields Typography Setup */
+.form-label {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #64748b !important;
+}
+
+.auth-input {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0 !important;
+  font-size: 14px;
+  color: #1e293b;
+  box-shadow: none !important;
+  transition: all 0.25s ease;
+}
+
+.auth-input:focus {
+  background-color: #ffffff;
+  border-color: #198754 !important;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1) !important;
+}
+
+/* Interactive Hyperlinks configuration mappings */
+.forgot-password-link, .toggle-mode-trigger {
+  color: #198754 !important;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover, .toggle-mode-trigger:hover {
+  color: #112217 !important;
+}
+
+/* Call to Action Primary Authentication Button Setup */
+.auth-action-btn {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  background-color: #112217;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.auth-action-btn:hover {
+  background-color: #198754 !important;
+  transform: translateY(-1.5px);
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.2);
+}
+
+/* Utility fade in animation macro for state toggles */
+.animate-fade-in {
+  animation: authFadeIn 0.35s ease forwards;
+}
+
+@keyframes authFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Micro responsiveness settings for small display screens */
+@media (max-width: 767.98px) {
+  .auth-card {
+    border: none;
+    box-shadow: none !important;
+  }
+  .auth-form-title {
+    font-size: 1.6rem;
+  }
+}
