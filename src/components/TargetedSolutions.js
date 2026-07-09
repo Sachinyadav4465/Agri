@@ -52,7 +52,7 @@ const TargetedSolutions = () => {
         {/* Section Heading */}
         <div className="text-center mb-5">
           <h2 className="solutions-main-title fw-bold text-uppercase tracking-wide">Targeted Crop Solutions</h2>
-          <p className="text-white solutions-subtitle">Tailored treatments for every farming challenge and crop type</p>
+          <p className="text-muted solutions-subtitle">Tailored treatments for every farming challenge and crop type</p>
           <div className="title-underline mx-auto"></div>
         </div>
 

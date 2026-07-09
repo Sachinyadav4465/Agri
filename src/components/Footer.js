@@ -164,7 +164,7 @@ const Footer = () => {
             {/* Column 5: Social Networking Links */}
             <div className="col-6 col-lg-2 text-start">
               <h5 className="footer-menu-title fw-bold text-white mb-3">Follow us on</h5>
-              <div className="d-flex gap-2.5 social-links-wrapper">
+              <div className="d-flex gap-3 social-links-wrapper">
                 <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon-btn rounded-circle bg-white text-dark d-flex align-items-center justify-content-center">
                   <i className="bi bi-facebook"></i>
                 </a>

@@ -179,7 +179,7 @@ const ExpertRecommendations = () => {
                 <div className="rec-img-wrapper overflow-hidden rounded-3 position-relative">
                   <img src={product.image} className="rec-product-img w-100 h-100" alt={product.title} />
                   {product.tag && (
-                    <span className="rec-badge bg-dark text-white px-2 py-1 small rounded-start position-absolute bottom-0 start-0 mb-3 ms-2">
+                    <span className="rec-badge  text-white px-2 py-1 small rounded-start position-absolute top-0 start-0 mb-3 ms-2">
                       {product.tag}
                     </span>
                   )}

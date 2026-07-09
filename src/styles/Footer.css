@@ -148,6 +148,7 @@
 
 /* Rounded Social Buttons exactly matching layout */
 .social-icon-btn {
+    gap: 2px;
   width: 34px;
   height: 34px;
   text-decoration: none;
