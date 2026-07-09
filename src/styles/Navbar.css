@@ -39,3 +39,91 @@
 .cursor-pointer { 
   cursor: pointer; 
 }
+.brand-logo h5{
+    font-size:24px;
+}
+
+.logo-icon{
+    font-size:22px;
+}
+
+.search-box input{
+    height:48px;
+}
+
+.search-box .input-group-text{
+    height:48px;
+}
+
+.location-box{
+    min-width:180px;
+}
+
+.navbar-nav .nav-link{
+    color:#222;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#2d6a4f;
+}
+
+.dropdown-menu{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.top-banner{
+    letter-spacing:.5px;
+}
+
+@media(max-width:991px){
+
+.brand-logo{
+justify-content:center;
+}
+
+.location-box{
+width:100%;
+}
+
+.search-box{
+margin:10px 0;
+}
+
+.navbar-nav{
+padding-top:15px;
+}
+
+.navbar-nav .nav-item{
+border-bottom:1px solid #eee;
+padding:10px 0;
+}
+
+}
+
+@media(max-width:576px){
+
+.brand-logo h5{
+font-size:20px;
+}
+
+.logo-icon{
+font-size:18px;
+}
+
+.search-box input{
+height:42px;
+}
+
+.search-box .input-group-text{
+height:42px;
+}
+
+.top-banner{
+font-size:12px;
+padding:8px;
+}
+
+}
