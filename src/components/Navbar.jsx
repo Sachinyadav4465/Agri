@@ -1,8 +1,11 @@
 import React from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../../src/components/context/CartContext"; // 1. Cart Context Import Kiya
 
 const Navbar = () => {
+  const { setIsDrawerOpen, cartCount } = useCart(); // 2. Context se Trigger aur Count nikala
+
   return (
     <header className="agro-navbar">
 
@@ -43,7 +46,6 @@ const Navbar = () => {
           </div>
 
           {/* Search */}
-
           <div className="col-lg-6 col-md-8">
 
             <div className="input-group search-box">
@@ -65,13 +67,11 @@ const Navbar = () => {
           </div>
 
           {/* Right Section */}
-
           <div className="col-lg-3 col-md-4">
 
             <div className="d-flex justify-content-md-end justify-content-center align-items-center gap-3 flex-wrap">
 
               {/* Location */}
-
               <div className="location-box border rounded px-2 py-2">
 
                 <div className="d-flex align-items-center">
@@ -90,15 +90,25 @@ const Navbar = () => {
 
               </div>
 
-              {/* Icons */}
-
+              {/* Icons Grid */}
               <div className="d-flex align-items-center gap-3 fs-4">
 
-                <Link to="/cart" className="text-success">
-
+                {/* 3. Cart Icon Context Handler Hook Trigger Button */}
+                <div 
+                  className="position-relative text-success cursor-pointer" 
+                  onClick={() => setIsDrawerOpen(true)}
+                  style={{ cursor: 'pointer' }}
+                >
                   <i className="bi bi-cart-fill"></i>
-
-                </Link>
+                  {cartCount > 0 && (
+                    <span 
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger text-white fw-bold d-flex align-items-center justify-content-center"
+                      style={{ fontSize: '10px', minWidth: '18px', height: '18px', padding: '0px' }}
+                    >
+                      {cartCount}
+                    </span>
+                  )}
+                </div>
 
                 <Link to="/auth" className="text-dark">
 
@@ -116,8 +126,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* Navigation */}
-
+      {/* Navigation Links Grid Links */}
       <nav className="navbar navbar-expand-lg bg-white shadow-sm">
 
         <div className="container-fluid px-lg-5">

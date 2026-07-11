@@ -1,0 +1,43 @@
+/* src/styles/Profile.css */
+
+.profile-page-wrapper {
+  background-color: #f8fafc !important;
+}
+
+.profile-avatar-circle {
+  background: linear-gradient(135deg, #198754 0%, #112217 100%) !important;
+}
+
+.text-xs {
+  font-size: 10px;
+  letter-spacing: 0.6px;
+}
+
+.fs-8 {
+  font-size: 12px;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.hover-bg-light:hover {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+/* Micro animations rules inside switcher frames */
+.animate-fade-in {
+  animation: profileFadeIn 0.35s ease-out forwards;
+}
+
+@keyframes profileFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

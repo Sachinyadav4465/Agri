@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Categories.css';
 
 const Categories = () => {
@@ -72,9 +72,11 @@ const Categories = () => {
                 <div className="agro-hover-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
                   <h5 className="overlay-title text-white fw-bold text-uppercase mb-2">{item.title}</h5>
                   <p className="overlay-desc text-white-50 small mb-4">{item.desc}</p>
-                  <button className="btn btn-sm btn-light rounded-pill px-4 fw-bold tracking-wider">
-                    VIEW DETAILS
-                  </button>
+                  <Link to={`/products/${item.id}`}>
+                    <button className="btn btn-sm btn-light rounded-pill px-4 fw-bold tracking-wider">
+                      VIEW DETAILS
+                    </button>
+                  </Link>
                 </div>
 
               </div>

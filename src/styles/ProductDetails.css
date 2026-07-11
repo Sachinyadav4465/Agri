@@ -1,0 +1,103 @@
+.product-details-page {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.details-img-holder {
+  height: 450px;
+}
+
+/* Active Thumbnail Outline Highlight */
+.thumbnail-box {
+  cursor: pointer;
+  border-color: #e2e8f0 !important;
+}
+
+.thumbnail-box:hover {
+  border-color: #94a3b8 !important;
+  transform: translateY(-2px);
+}
+
+.active-thumbnail-border {
+  border-color: #198754 !important; /* Green highlight on active thumbnail image */
+  box-shadow: 0 0 0 2px rgba(25, 135, 84, 0.15);
+}
+
+.quantity-counter-box {
+  background-color: #f8fafc;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.quantity-counter-box button {
+  color: #64748b;
+  outline: none;
+}
+
+.quantity-counter-box button:hover {
+  color: #112217;
+}
+
+.fs-7 {
+  font-size: 12px;
+}
+
+.btn-outline-dark {
+  border-color: #112217;
+  color: #112217;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #112217;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #198754 !important;
+  transition: all 0.25s ease;
+}
+
+.btn-success:hover {
+  background-color: #112217 !important;
+  border-color: #112217 !important;
+}
+
+.tab-trigger-btn {
+  letter-spacing: 0.8px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.tab-trigger-btn.active {
+  color: #198754 !important;
+}
+
+.tab-trigger-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #198754;
+}
+
+/* Smooth fade-in animation rule for image transitions */
+.animate-fade-in {
+  animation: detailsImageFade 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes detailsImageFade {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .details-img-holder {
+    height: 300px;
+  }
+}

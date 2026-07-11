@@ -1,0 +1,134 @@
+.all-products-catalog-page {
+  background-color: #ffffff;
+}
+
+.catalog-filter-heading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #334155;
+  display: block;
+}
+
+/* Card Zoom Interactivity Framework styles */
+.product-catalog-card {
+  border-color: #f1f5f9 !important;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.product-catalog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border-color: #e2e8f0 !important;
+}
+
+.catalog-card-img-holder {
+  height: 240px;
+}
+
+.catalog-zoom-effect {
+  transition: transform 0.5s ease;
+}
+
+.product-catalog-card:hover .catalog-zoom-effect {
+  transform: scale(1.04);
+}
+
+.catalog-card-title {
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.catalog-card-title:hover {
+  color: #198754 !important;
+}
+
+.text-xs {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.fs-8 {
+  font-size: 11px;
+}
+
+/* Fast Add to Basket Trigger Buttons Configuration */
+.fast-basket-btn {
+  background-color: #198754 !important;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.fast-basket-btn:hover {
+  background-color: #112217 !important;
+  transform: scale(1.08);
+}
+
+.fast-basket-btn:disabled {
+  background-color: #cbd5e1 !important;
+  cursor: not-allowed;
+}
+
+/* Customize HTML5 Form Range Input Sliders tint */
+.custom-agro-range::-webkit-slider-thumb {
+  background-color: #198754 !important;
+}
+.custom-agro-range::-webkit-slider-thumb:active {
+  background-color: #112217 !important;
+}
+
+.filter-checkbox-row:hover span {
+  color: #1e293b;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.card-img-frame {
+  height: 220px;
+}
+.premium-agro-card {
+  border-color: #f1f5f9 !important;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.premium-agro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+  border-color: #e2e8f0 !important;
+}
+.card-zoom-img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.premium-agro-card:hover .card-zoom-img {
+  transform: scale(1.05);
+}
+.product-title-nav {
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.product-title-nav:hover {
+  color: #198754 !important;
+}
+.filter-select-box {
+  width: 200px;
+  font-size: 14px;
+}
+.catalog-cart-btn {
+  background-color: #198754 !important;
+  border: none;
+  transition: all 0.2s ease;
+}
+.catalog-cart-btn:hover {
+  background-color: #112217 !important;
+}
+.filter-row:hover span {
+  color: #000000 !important;
+}
+.text-xs {
+  font-size: 11px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
