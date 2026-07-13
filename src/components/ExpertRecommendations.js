@@ -208,7 +208,7 @@ const ExpertRecommendations = () => {
  <div className="text-center mt-5">
           <button 
             className="btn btn-outline-success btn-view-all px-5 py-2.5 rounded-pill fw-bold text-uppercase"
-            onClick={() => navigate('/all-products')}
+            onClick={() => navigate('/products')}
           >
             View All Products
           </button>

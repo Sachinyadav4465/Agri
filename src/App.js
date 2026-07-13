@@ -5,11 +5,11 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Auth from './components/Auth'; 
 import ProductDetails from './components/ProductDetails'; 
-import Checkout from './components/Checkout';       // 👈 Check kro brackets toh nahi lage?
-import AllProducts from './components/AllProducts'; // 👈 Check kro brackets toh nahi lage?
-import { CartProvider } from '../src/components/context/CartContext'; // 1. Cart Context ko import kiya
+import Checkout from './components/Checkout';       
+import AllProducts from './components/AllProducts'; 
+import { CartProvider } from '../src/components/context/CartContext'; 
 import CartDrawer from './components/CartDrawer';   
-import Profile from './components/Profile'; // 2. Profile Component ko import kiya  
+import Profile from './components/Profile'; 
 
 function App() {
   return (
